@@ -243,7 +243,7 @@
                 >Loan Amount*</label
               >
               <input
-                type="number"
+                type="text"
                 name="loanAmount"
                 class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#38773f]"
                 placeholder="Enter Loan Amount"
@@ -290,8 +290,9 @@
               <input
                 type="tel"
                 name="mobile"
+                maxlength="10"
                 class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#38773f]"
-                placeholder="Enter Mobile Number"
+                placeholder="Enter Mobile Number"         
                 required
               />
             </div>
@@ -709,8 +710,10 @@
                   type="tel"
                   id="mobile"
                   name="mobile"
+                  maxlength="10"
                   pattern="[6-9][0-9]{9}"
                   required
+                 
                   title="Valid 10‑digit Indian mobile (starting 6‑9)"
                   class="w-full border border-gray‑300 rounded px‑3 py‑2 focus:outline‑none focus:ring‑2 focus:ring-[#38773f]"
                   placeholder="Enter Mobile Number"
